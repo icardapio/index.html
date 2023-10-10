@@ -1,0 +1,278 @@
+body{
+    font-size: 14px;
+    height: 100%;
+}
+
+.main-layout{
+    padding: 0 0 50px;
+}
+
+.restaurant-container{
+    display: block;
+}
+
+.restaurant-container .restaurant-column{
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.merchant-banner{
+    position: relative;
+    margin: auto;
+}
+
+.merchant-banner__wrapper{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    color: #f7f7f7;
+    height: 118px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50%;
+    justify-content: center;
+}
+
+/* fim do header banner*/
+
+.merchant-info{
+    border-radius: 20px 20px 0 0;
+    padding: 20px 20px 20px;
+    margin-top: 118px;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.merchant-info__content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.merchant-info__logo{
+    border-radius: 100%;
+    height: 52px;
+    width: 52px;
+    margin-right: 12px;
+    border: 2px solid rgba(0,0,0,.1);
+    align-self: flex-start;
+}
+
+.merchant-info__content{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.merchant-info__title-container{
+    flex: 1 1;
+    display: inline;
+}
+
+.merchant-info__title{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 24px;
+    color: #3e3e3e;
+    margin: 0 0 2px;
+}
+
+.merchant-info__detail-container{
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.merchant-details__button{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    color: #ea1d2c;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+    cursor: pointer;
+}
+
+.merchant-info__minimum-order{
+    color: #a6a6a5;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 4px;
+}
+
+/* restaurante menu */
+
+.restaurant-menu{
+    padding-bottom: 40px;
+}
+
+.restaurant-menu-group{
+    position: relative;
+}
+
+.restaurant-menu-group__title{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0 20px 0;
+    margin: 0;
+    color: #3f3e3e;
+    width: 100%;
+    background-color:#fff;
+}
+
+/* menu */
+
+.restaurant-menu-group__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(320px,1fr));
+    grid-gap: 0;
+    margin: 0;
+}
+
+.dish-card-wrapper{
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.dish-card--has-image{
+    grid-template-columns: 1fr 100px;
+    grid-gap: 15px;
+}
+
+.dish-card{
+    position: relative;
+    display: grid;
+    min-height: 147px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    text-decoration: none;
+    transition: .2s;
+    overflow: hidden;
+    height: 100%;
+}
+
+.dish-card__info{
+    display: grid;
+    grid-template-rows: 1fr 20px;
+    margin: 0;
+}
+
+.dish-card__info-top{
+    margin-bottom: 23px;
+}
+
+.dish-card__description{
+    display: grid;
+    color: #3e3e3e;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-top: 0;
+}
+
+.dish-card__details{
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: lighter;
+    color: #717171;
+    word-break: break-word;
+    margin-bottom: 10px;
+}
+
+
+.dish-card__price {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: #3e3e3e;
+}
+
+.dish-card .dish-card__container-image {
+    position: relative;
+}
+
+.dish-card__image{
+    width: 100px;
+    height: 75px;
+    border-radius: 4px;
+    pointer-events: none;
+    align-self: flex-start;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* menu bar */
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    left: 0;
+    right: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.24);
+    z-index: 10000;
+}
+
+.tab-bar .tab-bar-item, .tab-bar .tab-bar-item__badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-bar .tab-bar-item{
+    position: relative;
+    overflow: hidden;
+    padding: 8px 0;
+    width: 70px;
+    flex-direction: column;
+    color: #3f3e3e;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.tab-bar .tab-bar-item__icon{
+    position: relative;
+}
+
+.tab-bar .tab-bar-item__icon .icon-marmita{
+    width: 21px;
+}
+
+.icon-marmita{
+    display: inline-block;
+    position: relative;
+}
+
+.tab-bar .tab-bar-item__title{
+    color: #3e3e3e;
+    font-weight: 300;
+    font-size: .75rem;
+    line-height: .875rem;
+}
+
+
+
+

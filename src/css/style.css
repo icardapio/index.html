@@ -7,7 +7,9 @@ html {
 
 body {
     font-family: var(--fonte-primaria);
-    
+    overflow-x: hidden;
+    font-size: 16px;
+    height: 100%;
 }
 
 .main-layout{
@@ -125,6 +127,124 @@ body {
 
 /* restaurante menu */
 
+.restaurant-menu__header--sticky{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.restaurant-menu__header{
+    align-items: center;
+    background-color: #fff;
+    z-index: 9994;
+    transition: height .2s ease-in-out;
+}
+
+.restaurant-menu__header-wrapper{
+    width: 100%;
+}
+
+.restaurant-menu__fast-menu--sticky{
+    display: block;
+}
+
+.restaurant-menu__fast-menu{
+    flex: 2 1;
+}
+
+.fast-menu-mobile{
+    position: relative;
+}
+
+.fast-menu-mobile .marmita-scrollbox{
+    height: 46px;
+}
+
+.marmita-scrollbox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 145px;
+}
+
+.marmita-scrollbox__wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 17px;
+    box-sizing: content-box;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.marmita-scrollbox__container {
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    display: inline-flex;
+    background-color: #fff;
+}
+
+.marmita-scrollbox__container>*{
+    margin-right: 1.25rem;
+}
+
+.fast-menu-mobile--selected{
+    border-bottom: 2px solid #ea1d2c;
+}
+
+.fast-menu-mobile{
+    position: relative;
+}
+
+.fast-menu-mobile--selected .btn{
+    color: #ea1d2c;
+}
+
+.fast-menu-mobile .btn  {
+    display: inline-block;
+    width: -moz-max-content;
+    width: max-content;
+    color: #a6a5a5;
+    height: 44px;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 0;
+}
+
+
+.btn--link {
+    background: transparent;
+    color: #ea1d2c;
+}
+
+.btn {
+    background: transparent;
+    text-decoration: none;
+    color: #ea1d2c;
+    border: none;
+    padding: 0 20px;
+    border-radius: 4px;
+    margin: 3px 0;
+    height: 50px;
+    font-weight: 500;
+    transition: .1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+
 .restaurant-menu{
     padding-bottom: 10px;
 }
@@ -142,7 +262,6 @@ body {
     color: var(--cor-4);
     width: 100%;
     background-color:var(--cor-1);
-    border-bottom: solid 1px var(--cor-6);
 }
 
 /* menu */

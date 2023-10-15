@@ -163,6 +163,7 @@ body {
     width: 100%;
     overflow: hidden;
     height: 145px;
+    background-color: var(--cor-1);
 }
 
 .marmita-scrollbox__wrapper {
@@ -178,7 +179,6 @@ body {
 
 .marmita-scrollbox__container {
     height: 100%;
-    border-radius: 5px;
     position: relative;
     display: inline-flex;
     background-color: #fff;
@@ -242,11 +242,6 @@ button, input, optgroup, select, textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
-}
-
-
-.restaurant-menu{
-    padding-bottom: 10px;
 }
 
 .restaurant-menu-group{
@@ -370,7 +365,7 @@ button, input, optgroup, select, textarea {
 .tab-bar .tab-bar-item{
     position: relative;
     overflow: hidden;
-    padding: 8px 0;
+    padding: 10px 0;
     width: 70px;
     flex-direction: column;
     color: var(--cor-4);

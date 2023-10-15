@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --cor-1: #ffff ;
+    --cor-2: #000;    
+    --cor-3:#ff2a00;
+    --cor-4:#3f3e3e;
+    --cor-5:#717171;
+    --cor-6:#eeeeee; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.carrinho{
+    width: 400px;
+    height: min-content;
+    padding: 35px;
+}
+
+.carrinho .cabecalho-carrinho{
+    display: flex;
+}
+
+.carrinho .cabecalho-carrinho button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 50%;
+    color: var(--cor-3);
+    border: 2px solid var(--cor-1);
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.carrinho .cabecalho-carrinho button:hover{
+    border: 2px solid var(--cor-1);
+    border-color:var(--cor-3);
+}
+
+.carrinho .cabecalho-carrinho h3{
+    margin: auto;
+    text-align: center;
+    font: 400 1.25rem ;
+    color: var(--cor-2);
+}
+
+.carrinho .carrinho-item{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    border-radius:8px;
+    box-shadow: 0 4px 18px #2a2f430f;
+}
+
+.carrinho .carrinho-item .imagem{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.carrinho .carrinho-item img{
+    width: 90%;
+}
+
+.carrinho .carrinho-item .info{
+    width: 70%;
+    padding: 14px;
+}
+
+.carrinho .carrinho-item h4{
+    color: var(--cor-2);
+    font: 700 1.25rem ;
+}
+
+.carrinho .carrinho-item .detalhes{
+    display: flex;
+    gap: 10px;
+}
+
+.carrinho .carrinho-item .detalhes i {
+    font-size: 1.0625rem;
+    color: var(--cor-5);
+    transform: translateY(3px);
+}
+
+.carrinho .carrinho-item .detalhes span{
+    font: 600 0.75rem;
+    color: var(--cor-2);
+}
+
+.carrinho .carrinho-item .preco{
+    color: var(--cor-2);
+    font: 700 1.25rem;
+    margin-top: 8px;
+}
+
+.carrinho .carrinho-item .contador{
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.carrinho .carrinho-item .contador i {
+    cursor: pointer;
+    width: 25px;
+    height: 35px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    background: var(--cor-1);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.carrinho .carrinho-item .contador span{
+    margin: 0 6px ;
+    font: 700 1rem;
+    color:var(--cor-2)
+}
+
+.carrinho .pagar{
+    font: 500 1rem ;
+    cursor: pointer;
+    width: 100%;
+    background: var(--cor-2);
+    padding: 15px 0;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.carrinho .pagar:hover{
+    background:var(--cor-3);
+}
+
+
+

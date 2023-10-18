@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root {
+    --fonte-primaria: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --cor-1: #ffff ;
+    --cor-2: #000;    
+    --cor-3:#ea1d2c;
+    --cor-4:#3f3e3e;
+    --cor-5:#717171;
+    --cor-6:#eeeeee;
+    --cor-7: #e7a74e;
+    --cor-8: #a6a6a6;
+    --cor-9:#dcdcdc;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    overflow-x: hidden;
+    font-size: 16px;
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+
+.marmita-modal--fullpage-overlay, .marmita-modal--fullscreen-with-overlay-overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    z-index: 10001;
+}
+
+
+.marmita-modal__content {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: none;
+}
+
+.marmita-modal--theme-white {
+    background:var(--cor-1);
+}
+
+.marmita-modal__inner-content {
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.dish-content {
+    display: grid;
+    grid-template-rows: 60px minmax(auto,calc(var(--screen-y) - 140px)) 80px;
+    grid-template-areas:
+        "header"
+        "scroll"
+        "action";
+    max-height: var(--screen-y);
+}
+
+.dish-content__img-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.dish-content__img-bg {
+    width: 100%;
+    height: 40vh;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+img {
+    border-style: none;
+}
+
+.dish-content__header {
+    grid-area: header;
+}
+
+.dish-modal__header .nav-header {
+    position: fixed;
+    width: 100%;
+    box-shadow: none;
+}
+
+.nav-header--with-padding {
+    padding: 10px 20px;
+}
+
+.nav-header--primary {
+    background:var(--cor-1);
+    box-shadow: 0 -1px 4px rgba(0,0,0,.1);
+}
+
+.nav-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    left: 0;
+    min-height: 60px;
+    z-index: 9997;
+}
+
+.dish-modal .btn-icon.dish-modal__header-back-button {
+    left: auto;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-header .btn-icon {
+    margin: 0;
+    z-index: 1;
+    border-radius: 0;
+    height: 40px;
+    width: 50px;
+    left: -17px;
+    padding: 0 0 0 14px;
+}
+
+.btn-icon .icon-marmita {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-marmita {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-header--primary .btn-icon .icon-marmita svg {
+    color: var(--cor-3);
+    fill: var(--cor-3);
+}
+
+.icon-marmita svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav-header--primary .nav-header__title {
+    color: var(--cor-4);
+}
+
+.nav-header__title {
+    font-size: .75rem;
+    font-weight: 400;
+    left: 0;
+    margin: 0;
+    padding: 2px 50px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 0;
+}
+
+.dish-modal__header .nav-header__right-button {
+    display: none;
+}
+
+/* img do detalhes */
+
+.dish-content__title {
+    margin-top: 10px;
+    padding: 2px 20px;
+}
+
+.dish-content__title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--cor-4);
+    background: var(--cor-1);
+    z-index: 30;
+}
+
+.dish-content__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+.dish-content__details {
+    display: inline-block;
+    font-size: .880rem;
+    padding-top: 10px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.22;
+    color: var(--cor-5);
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.dish-content__container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dish-additional__side-space {
+    padding: 10px 20px;
+}
+
+.dish-additional__container {
+    display: flex;
+    align-items: center;
+}
+
+.dish-info-serves {
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+    gap: 4px;
+    padding-right: 4px;
+}
+
+
+.dish-info-serves__title, .dish-info-weight__title {
+    font-size: .875rem;
+    line-height: 1rem;
+    color:var(--cor-4);
+    font-weight: 500;
+}
+
+.dish-price {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: .875rem;
+    color: var(--cor-4);
+}
+
+.dish-content__merchandise-tags {
+    margin: 12px 0 24px;
+}
+
+.dish-content .dish-restaurant {
+    margin-bottom: 12px;
+}
+
+.dish-restaurant {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(63,62,62,.1);
+    border-radius: 4px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    overflow: visible;
+    background: transparent;
+    height: auto;
+    text-decoration: none;
+}
+
+.dish-restaurant__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-restaurant__description {
+    display: flex;
+    align-items: center;
+}
+
+.dish-restaurant__delivery-time, .dish-restaurant__description {
+    font-size: .75rem;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.icon-marmita {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-marmita svg [fill="#3F3E3E"] {
+    fill: currentcolor;
+}
+
+.dish-restaurant__title {
+    color: var(--cor-4);
+    margin: 0 8px 0 4px;
+}
+
+.dish-restaurant__evaluation {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    color:var(--cor-7);
+}
+
+
+
+.dish-restaurant__evaluation svg {
+    color: #e7a74e;
+    fill: #e7a74e;
+    width: 10px;
+    height: 10px;
+}
+
+.icon-marmita svg {
+    color: var(--cor-5);
+    width: 100%;
+    height: 100%;
+}
+
+.dish-restaurant__evaluation-value {
+    margin-left: 4px;
+}
+
+.dish-restaurant__divisor {
+    border-top: 2px dashed var(--cor-6);
+    margin: 8px 0;
+}
+
+.dish-restaurant__footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.dish-restaurant__delivery-time {
+    color: var(--cor-5);
+}
+
+.dish-restaurant__delivery-time, .dish-restaurant__description {
+    font-size: .75rem;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.dish-restaurant__dot-divisor {
+    color: var(--cor-5);
+    margin: 0 4px;
+}
+
+.dish-restaurant__delivery-price {
+    color: var(--cor-5);
+    font-size: .75rem;
+}
+
+.dish-garnishes {
+    padding: 0;
+    width: 100%;
+}
+
+.dish-observation-form {
+    display: block;
+    padding: 0 20px;
+}
+
+.dish-observation-form__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 10px;
+}
+
+.dish-observation-form__label {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-5);
+}
+
+.dish-observation-form__counter {
+    color: var(--cor-8);
+    font-weight: 100;
+    font-size: .875rem;
+}
+
+.dish-observation-form__textarea {
+    border-radius: 4px;
+    border: 1px solid var(--cor-6);
+    background-color: var(--cor-1);
+    margin-bottom: 10px;
+    font-size: 1rem;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    color: var(--cor-6);
+    font-weight: 400;
+    resize: none;
+    height: calc(3.2em + 20px);
+    min-height: calc(3.2em + 20px);
+    padding: 10px;
+}
+
+.dish-content__container button {
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    background: transparent;
+    text-decoration: none;
+    color: #ea1d2c;
+    border: none;
+    padding: 0 20px;
+    border-radius: 4px;
+    margin: 3px 0;
+    height: 50px;
+    font-weight: 500;
+    transition: .1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.dish-content__action {
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.dish-content__action {
+    grid-area: action;
+    z-index: 30;
+    position: fixed;
+}
+
+.dish-action .dish-tooltip {
+    align-items: center;
+    background:var(--cor-1);
+    border-top: 2px solid var(--cor-6);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    height: 80px;
+    width: 100%;
+}
+
+.dish-action__add-wrapper, .dish-action__update-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.dish-action__counter {
+    display: inline-flex;
+    border: 1px solid var(--cor-9);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.marmita-counter {
+    display: flex;
+    align-items: center;
+}
+
+.marmita-counter .btn-icon {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-icon:disabled {
+    opacity: .4;
+    cursor: no-drop;
+}
+
+.btn-icon.btn-icon--transparent {
+    background: transparent;
+    color: var(--cor-3);
+}
+
+.marmita-counter__value {
+    display: inline-block;
+    height: 30px;
+    min-width: 35px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 3px 0;
+}
+
+.marmita-counter .btn-icon {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.btn-icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.btn-icon {
+    padding: 0;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    outline: none;
+    transition: .1s;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.btn-icon .icon-marmita {
+    height: 20px;
+    width: 20px;
+}
+.icon-marmita {
+    display: inline-block;
+    position: relative;
+}
+
+.dish-action__add-wrapper .btn--default, .dish-action__add-wrapper .btn.btn--full-width, .dish-action__update-wrapper .btn--default, .dish-action__update-wrapper .btn.btn--full-width {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.btn--default {
+    background: var(--cor-3);
+    color:var(--cor-1);
+}
+
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+.dish-action__add-button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: .875rem;
+}

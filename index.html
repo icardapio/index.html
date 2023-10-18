@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,26 @@
     <link rel="stylesheet" href="index/src/css/reset.css">
     <link rel="stylesheet" href="index/src/css/variaveis.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
     <main class="main-layout">
         <div class="restaurant-container">
             <div class="restaurant-column">
                 <header class="merchant-banner">
                     <div class="merchant-banner__wrapper">
-                        <img src="/images/banner-icardapio.jpg" alt="capa-icardapio">
+                        <img src="images/banner-icardapio.jpg" alt="capa-icardapio">
                     </div>
                 </header>
             </div>
         </div>
         <header class="merchant-info">
             <div class="merchant-info__content-container">
-                <img class="merchant-info__logo" src="/images/logo-icardapio.jpg" alt="logo-icardapio">
+                <img class="merchant-info__logo" src="images/logo-icardapio.jpg" alt="logo-icardapio">
                 <div class="merchant-info__content">
                     <div class="merchant-info__title-container">
                         <h1 class="merchant-info__title">Aipetite</h1>
@@ -39,60 +43,172 @@
         </header>
 
         <div class="restaurant-menu">
-        <div class="restaurant__fast-menu">
-            <div class="restaurant-menu__header restaurant-menu__header--sticky">
-                <div class="restaurant-menu__header-wrapper">
-                    <div class="restaurant-menu__fast-menu restaurant-menu__fast-menu--sticky">
-                        <div class="fast-menu-mobile">
-                            <div class="marmita-scrollbox">
-                                <div class="marmita-scrollbox__wrapper">
-                                    <div class="marmita-scrollbox__container">
-                                        <div class="marmita-scrollbox__item">
-                                            <div class="fast-menu-mobile fast-menu-mobile--selected">
-                                            <a href="#pratos"><button type="button" class="btn btn--link btn--size-m">Pratos
-                                                </button></a>
+            <div class="restaurant__fast-menu">
+                <div class="restaurant-menu__header restaurant-menu__header--sticky">
+                    <div class="restaurant-menu__header-wrapper">
+                        <div class="restaurant-menu__fast-menu restaurant-menu__fast-menu--sticky">
+                            <div class="fast-menu-mobile">
+                                <div class="marmita-scrollbox">
+                                    <div class="marmita-scrollbox__wrapper">
+                                        <div class="marmita-scrollbox__container">
+                                            <div class="marmita-scrollbox__item">
+                                                <div class="fast-menu-mobile fast-menu-mobile--selected">
+                                                    <a href="#pratos"><button type="button"
+                                                            class="btn btn--link btn--size-m">Pratos
+                                                        </button></a>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="marmita-scrollbox__item">
-                                            <div class="fast-menu-mobile fast-menu-mobile--selected">
-                                                <a href="#alacarte"><button type="button" class="btn btn--link btn--size-m">À La Carte
-                                                </button></a>
+                                            <div class="marmita-scrollbox__item">
+                                                <div class="fast-menu-mobile fast-menu-mobile--selected">
+                                                    <a href="#alacarte"><button type="button"
+                                                            class="btn btn--link btn--size-m">À La Carte
+                                                        </button></a>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="marmita-scrollbox__item">
-                                            <div class="fast-menu-mobile fast-menu-mobile--selected">
-                                                <a href="#bebidas"><button type="button" class="btn btn--link btn--size-m">Bebidas
-                                                </button></a>
+                                            <div class="marmita-scrollbox__item">
+                                                <div class="fast-menu-mobile fast-menu-mobile--selected">
+                                                    <a href="#bebidas"><button type="button"
+                                                            class="btn btn--link btn--size-m">Bebidas
+                                                        </button></a>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="marmita-scrollbox__item">
-                                            <div class="fast-menu-mobile fast-menu-mobile--selected">
-                                                <a href="#doces"><button type="button" class="btn btn--link btn--size-m">Doces
-                                                </button></a>
+                                            <div class="marmita-scrollbox__item">
+                                                <div class="fast-menu-mobile fast-menu-mobile--selected">
+                                                    <a href="#doces"><button type="button"
+                                                            class="btn btn--link btn--size-m">Doces
+                                                        </button></a>
+                                                </div>
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="restaurant-menu-group" id="pratos">
+                    <h2 class="restaurant-menu-group__title">Pratos</h2>
+                    <ul class="restaurant-menu-group__container">
+                        <li>
+                            <div class="card-wrapper">
+                                <a class="dish-card dish-card--horizontal dish-card--has-image" href="detalhe.html">
+                                    <div class="dish-card__info dish-card__info--horizontal">
+                                        <div class="dish-card__info-top">
+                                            <h3 class="dish-card__description">Prato 1</h3>
+                                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1
+                                                Refogado Do Dia
+                                            </span>
+                                        </div>
+                                        <span class="dish-card__price">
+                                            R$ 20,00
+                                        </span>
+                                    </div>
+                                    <div class="dish-card__container-image">
+                                        <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-wrapper">
+                                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                                    <div class="dish-card__info dish-card__info--horizontal">
+                                        <div class="dish-card__info-top">
+                                            <h3 class="dish-card__description">Prato 1</h3>
+                                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1
+                                                Refogado Do Dia
+                                            </span>
+                                        </div>
+                                        <span class="dish-card__price">
+                                            R$ 20,00
+                                        </span>
+                                    </div>
+                                    <div class="dish-card__container-image">
+                                        <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-wrapper">
+                                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                                    <div class="dish-card__info dish-card__info--horizontal">
+                                        <div class="dish-card__info-top">
+                                            <h3 class="dish-card__description">Prato 1</h3>
+                                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1
+                                                Refogado Do Dia
+                                            </span>
+                                        </div>
+                                        <span class="dish-card__price">
+                                            R$ 20,00
+                                        </span>
+                                    </div>
+                                    <div class="dish-card__container-image">
+                                        <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-wrapper">
+                                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                                    <div class="dish-card__info dish-card__info--horizontal">
+                                        <div class="dish-card__info-top">
+                                            <h3 class="dish-card__description">Prato 1</h3>
+                                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1
+                                                Refogado Do Dia
+                                            </span>
+                                        </div>
+                                        <span class="dish-card__price">
+                                            R$ 20,00
+                                        </span>
+                                    </div>
+                                    <div class="dish-card__container-image">
+                                        <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-wrapper">
+                                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                                    <div class="dish-card__info dish-card__info--horizontal">
+                                        <div class="dish-card__info-top">
+                                            <h3 class="dish-card__description">Prato 1</h3>
+                                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1
+                                                Refogado Do Dia
+                                            </span>
+                                        </div>
+                                        <span class="dish-card__price">
+                                            R$ 20,00
+                                        </span>
+                                    </div>
+                                    <div class="dish-card__container-image">
+                                        <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="restaurant-menu-group"id="pratos">
-                <h2 class="restaurant-menu-group__title"
-                >Pratos</h2>
-                <ul class="restaurant-menu-group__container">
+        </div>
+
+        <div class="restaurant-menu-group" id="alacarte">
+            <h2 class="restaurant-menu-group__title">À La Carte</h2>
+            <ul class="restaurant-menu-group__container">
                 <li>
                     <div class="card-wrapper">
-                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="carrinho.html">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#pratos">
                             <div class="dish-card__info dish-card__info--horizontal">
                                 <div class="dish-card__info-top">
                                     <h3 class="dish-card__description">Prato 1</h3>
-                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
                                     </span>
                                 </div>
                                 <span class="dish-card__price">
@@ -100,7 +216,7 @@
                                 </span>
                             </div>
                             <div class="dish-card__container-image">
-                                <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
                             </div>
                         </a>
                     </div>
@@ -111,7 +227,8 @@
                             <div class="dish-card__info dish-card__info--horizontal">
                                 <div class="dish-card__info-top">
                                     <h3 class="dish-card__description">Prato 1</h3>
-                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
                                     </span>
                                 </div>
                                 <span class="dish-card__price">
@@ -119,7 +236,7 @@
                                 </span>
                             </div>
                             <div class="dish-card__container-image">
-                                <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
                             </div>
                         </a>
                     </div>
@@ -130,7 +247,8 @@
                             <div class="dish-card__info dish-card__info--horizontal">
                                 <div class="dish-card__info-top">
                                     <h3 class="dish-card__description">Prato 1</h3>
-                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
                                     </span>
                                 </div>
                                 <span class="dish-card__price">
@@ -138,7 +256,7 @@
                                 </span>
                             </div>
                             <div class="dish-card__container-image">
-                                <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
                             </div>
                         </a>
                     </div>
@@ -149,7 +267,8 @@
                             <div class="dish-card__info dish-card__info--horizontal">
                                 <div class="dish-card__info-top">
                                     <h3 class="dish-card__description">Prato 1</h3>
-                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
                                     </span>
                                 </div>
                                 <span class="dish-card__price">
@@ -157,7 +276,7 @@
                                 </span>
                             </div>
                             <div class="dish-card__container-image">
-                                <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
                             </div>
                         </a>
                     </div>
@@ -168,7 +287,116 @@
                             <div class="dish-card__info dish-card__info--horizontal">
                                 <div class="dish-card__info-top">
                                     <h3 class="dish-card__description">Prato 1</h3>
-                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+
+        <div class="restaurant-menu-group" id="bebidas">
+            <h2 class="restaurant-menu-group__title">Bebidas</h2>
+            <ul class="restaurant-menu-group__container">
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#pratos">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
                                     </span>
                                 </div>
                                 <span class="dish-card__price">
@@ -182,324 +410,120 @@
                     </div>
                 </li>
             </ul>
-            </div>
         </div>
-    </div>
+        </div>
+        </div>
 
-    <div class="restaurant-menu-group"id="alacarte">
-        <h2 class="restaurant-menu-group__title"
-        >À La Carte</h2>
-        <ul class="restaurant-menu-group__container">
-        <li>
-            <div class="card-wrapper">
-                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#pratos">
-                    <div class="dish-card__info dish-card__info--horizontal">
-                        <div class="dish-card__info-top">
-                            <h3 class="dish-card__description">Prato 1</h3>
-                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                            </span>
-                        </div>
-                        <span class="dish-card__price">
-                            R$ 20,00
-                        </span>
+        <div class="restaurant-menu-group" id="doces">
+            <h2 class="restaurant-menu-group__title">Doces</h2>
+            <ul class="restaurant-menu-group__container">
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#pratos">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
                     </div>
-                    <div class="dish-card__container-image">
-                        <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="card-wrapper">
-                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                    <div class="dish-card__info dish-card__info--horizontal">
-                        <div class="dish-card__info-top">
-                            <h3 class="dish-card__description">Prato 1</h3>
-                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                            </span>
-                        </div>
-                        <span class="dish-card__price">
-                            R$ 20,00
-                        </span>
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
                     </div>
-                    <div class="dish-card__container-image">
-                        <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="card-wrapper">
-                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                    <div class="dish-card__info dish-card__info--horizontal">
-                        <div class="dish-card__info-top">
-                            <h3 class="dish-card__description">Prato 1</h3>
-                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                            </span>
-                        </div>
-                        <span class="dish-card__price">
-                            R$ 20,00
-                        </span>
+                </li>
+                <li>
+                    <div class="card-wrapper">
+                        <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
+                            <div class="dish-card__info dish-card__info--horizontal">
+                                <div class="dish-card__info-top">
+                                    <h3 class="dish-card__description">Prato 1</h3>
+                                    <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado
+                                        Do Dia
+                                    </span>
+                                </div>
+                                <span class="dish-card__price">
+                                    R$ 20,00
+                                </span>
+                            </div>
+                            <div class="dish-card__container-image">
+                                <img class="card-image" src="images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
+                            </div>
+                        </a>
                     </div>
-                    <div class="dish-card__container-image">
-                        <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                    </div>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="card-wrapper">
-                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                    <div class="dish-card__info dish-card__info--horizontal">
-                        <div class="dish-card__info-top">
-                            <h3 class="dish-card__description">Prato 1</h3>
-                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                            </span>
-                        </div>
-                        <span class="dish-card__price">
-                            R$ 20,00
-                        </span>
-                    </div>
-                    <div class="dish-card__container-image">
-                        <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                    </div>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="card-wrapper">
-                <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                    <div class="dish-card__info dish-card__info--horizontal">
-                        <div class="dish-card__info-top">
-                            <h3 class="dish-card__description">Prato 1</h3>
-                            <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                            </span>
-                        </div>
-                        <span class="dish-card__price">
-                            R$ 20,00
-                        </span>
-                    </div>
-                    <div class="dish-card__container-image">
-                        <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                    </div>
-                </a>
-            </div>
-        </li>
-    </ul>
-    </div>
-</div>
-</div>
-
-<div class="restaurant-menu-group"id="bebidas">
-    <h2 class="restaurant-menu-group__title"
-    >Bebidas</h2>
-    <ul class="restaurant-menu-group__container">
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#pratos">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
+                </li>
+            </ul>
         </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
         </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
         </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-</ul>
-</div>
-</div>
-</div>
-
-<div class="restaurant-menu-group"id="doces">
-    <h2 class="restaurant-menu-group__title"
-    >Doces</h2>
-    <ul class="restaurant-menu-group__container">
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#pratos">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-    <li>
-        <div class="card-wrapper">
-            <a class="dish-card dish-card--horizontal dish-card--has-image" href="#">
-                <div class="dish-card__info dish-card__info--horizontal">
-                    <div class="dish-card__info-top">
-                        <h3 class="dish-card__description">Prato 1</h3>
-                        <span class="dish-card__details">Arroz, Feijão, Escolha 1 Tipo De Carne E 1 Refogado Do Dia
-                        </span>
-                    </div>
-                    <span class="dish-card__price">
-                        R$ 20,00
-                    </span>
-                </div>
-                <div class="dish-card__container-image">
-                    <img class="card-image" src="/images/pratoDoCardpio.jpg" alt="pratoDoCardpio">
-                </div>
-            </a>
-        </div>
-    </li>
-</ul>
-</div>
-</div>
-</div>
     </main>
-<!-- footer -->
-<!-- Barra de baixo incio / busca / pedidos / erfil.
+    <!-- footer -->
+    <!-- Barra de baixo incio / busca / pedidos / erfil.
 nota: sem font os icons -->
     <div class="tab-bar">
         <a class="tab-bar-item" href="#">
@@ -533,5 +557,7 @@ nota: sem font os icons -->
             </ul>
         </nav>
     </footer>
+
 </body>
+
 </html>

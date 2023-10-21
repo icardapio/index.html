@@ -387,7 +387,7 @@ body {
 
 .checkout__warning-minimum-order {
     border-top: 1px solid var(--cor-6);
-    padding: 20px 10px 40px 10px;
+    padding: 20px 10px;
     color: var(--cor-5);
     text-align: center;
     font-size: .9375rem;

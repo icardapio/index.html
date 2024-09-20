@@ -1,38 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--fonte-primaria);
-    overflow-x: hidden;
-    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.smartphone {
+    width: 360px;
+    height: 640px;
+    background-color: #000;
+    border-radius: 36px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.smartphone::before {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.screen {
+    width: 100%;
     height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    overflow-y: auto;
 }
 
-.main-layout{
-    padding: 0 0 0 ;
+h1, p {
+    text-align: center;
 }
 
-.restaurant-container{
+
+.main-layout {
+    padding: 0 0 0;
+}
+
+.restaurant-container {
     display: block;
 }
 
-.restaurant-container .restaurant-column{
+.restaurant-container .restaurant-column {
     width: 100%;
     flex-basis: 100%;
 }
 
-.merchant-banner{
+.merchant-banner {
     position: relative;
     margin: auto;
 }
 
-.merchant-banner__wrapper{
+.merchant-banner__wrapper {
     display: flex;
-    position: fixed;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -42,58 +83,60 @@ body {
     background-size: cover;
     background-position: 50%;
     justify-content: center;
+    padding-top: 15px;
 }
+
+
 
 /* fim do header banner*/
 
-.merchant-info{
+.merchant-info {
     border-radius: 20px 20px 0 0;
     padding: 20px 20px 20px;
-    margin-top: 118px;
     position: relative;
-    background-color:var(--cor-1);
+    background-color: var(--cor-1);
     display: flex;
     flex-direction: column;
 }
 
-.merchant-info__content-container{
+.merchant-info__content-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.merchant-info__logo{
+.merchant-info__logo {
     border-radius: 100%;
     height: 52px;
     width: 52px;
     margin-right: 12px;
-    border: 2px solid rgba(0,0,0,.1);
+    border: 2px solid rgba(0, 0, 0, .1);
     align-self: flex-start;
 }
 
-.merchant-info__content{
+.merchant-info__content {
     flex: 1 1;
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 
-.merchant-info__title-container{
+.merchant-info__title-container {
     flex: 1 1;
     display: inline;
 }
 
-.merchant-info__title{
+.merchant-info__title {
     display: inline;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 24px;
     color: var(--cor-2);
     margin: 0 0 2px;
-    font-family:var(--fonte-3) ;
+    font-family: var(--fonte-3);
 }
 
-.merchant-info__detail-container{
+.merchant-info__detail-container {
     flex: 1 1;
     display: flex;
     flex-direction: row;
@@ -103,7 +146,7 @@ body {
     align-items: center;
 }
 
-.merchant-details__button{
+.merchant-details__button {
     display: flex;
     align-items: center;
     outline: none;
@@ -117,7 +160,7 @@ body {
     cursor: pointer;
 }
 
-.merchant-info__minimum-order{
+.merchant-info__minimum-order {
     color: var(--cor-5);
     font-size: 12px;
     font-weight: 400;
@@ -127,52 +170,53 @@ body {
 
 /* restaurante menu */
 
-.restaurant-menu__header--sticky{
+.restaurant-menu__header--sticky {
     border-bottom: 1px solid #e6e6e6;
 }
 
-.restaurant-menu__header{
+.restaurant-menu__header {
     align-items: center;
     background-color: #fff;
     z-index: 9994;
     transition: height .2s ease-in-out;
 }
 
-.restaurant-menu__header-wrapper{
+.restaurant-menu__header-wrapper {
     width: 100%;
 }
 
-.restaurant-menu__fast-menu--sticky{
+.restaurant-menu__fast-menu--sticky {
     display: block;
 }
 
-.restaurant-menu__fast-menu{
+.restaurant-menu__fast-menu {
     flex: 2 1;
 }
 
-.fast-menu-mobile{
+.fast-menu-mobile {
     position: relative;
 }
 
-.fast-menu-mobile .marmita-scrollbox{
+.fast-menu-mobile .marmita-scrollbox {
     height: 46px;
 }
 
 .marmita-scrollbox {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     height: 145px;
     background-color: var(--cor-1);
+
 }
 
 .marmita-scrollbox__wrapper {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     padding-bottom: 17px;
-    box-sizing: content-box;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
 }
@@ -181,26 +225,27 @@ body {
     height: 100%;
     position: relative;
     display: inline-flex;
+    overflow-x: scroll;
     background-color: #fff;
 }
 
-.marmita-scrollbox__container>*{
+.marmita-scrollbox__container>* {
     margin-right: 1.25rem;
 }
 
-.fast-menu-mobile--selected{
+.fast-menu-mobile--selected {
     border-bottom: 2px solid #ea1d2c;
 }
 
-.fast-menu-mobile{
+.fast-menu-mobile {
     position: relative;
 }
 
-.fast-menu-mobile--selected .btn{
+.fast-menu-mobile--selected .btn {
     color: #ea1d2c;
 }
 
-.fast-menu-mobile .btn  {
+.fast-menu-mobile .btn {
     display: inline-block;
     width: -moz-max-content;
     width: max-content;
@@ -244,11 +289,11 @@ button, input, optgroup, select, textarea {
     margin: 0;
 }
 
-.restaurant-menu-group{
+.restaurant-menu-group {
     position: relative;
 }
 
-.restaurant-menu-group__title{
+.restaurant-menu-group__title {
     position: relative;
     font-weight: 500;
     font-size: 1.4rem;
@@ -256,30 +301,30 @@ button, input, optgroup, select, textarea {
     margin: 0;
     color: var(--cor-4);
     width: 100%;
-    background-color:var(--cor-1);
+    background-color: var(--cor-1);
 }
 
 /* menu */
 
-.restaurant-menu-group__container{
+.restaurant-menu-group__container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1,minmax(320px,1fr));
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
     grid-gap: 0;
     margin: 0;
 }
 
-.dish-card-wrapper{
+.dish-card-wrapper {
     position: relative;
     margin-bottom: 14px;
 }
 
-.dish-card--has-image{
+.dish-card--has-image {
     grid-template-columns: 1fr 100px;
     grid-gap: 15px;
 }
 
-.dish-card{
+.dish-card {
     position: relative;
     display: grid;
     min-height: 147px;
@@ -293,17 +338,17 @@ button, input, optgroup, select, textarea {
     border-bottom: solid 1px var(--cor-6);
 }
 
-.dish-card__info{
+.dish-card__info {
     display: grid;
     grid-template-rows: 1fr 20px;
     margin: 0;
 }
 
-.dish-card__info-top{
+.dish-card__info-top {
     margin-bottom: 23px;
 }
 
-.dish-card__description{
+.dish-card__description {
     display: grid;
     color: var(--cor-4);
     font-weight: 400;
@@ -312,7 +357,7 @@ button, input, optgroup, select, textarea {
     margin-top: 0;
 }
 
-.dish-card__details{
+.dish-card__details {
     font-size: .75rem;
     line-height: 1rem;
     font-weight: lighter;
@@ -334,7 +379,7 @@ button, input, optgroup, select, textarea {
     position: relative;
 }
 
-.card-image{
+.card-image {
     width: 100px;
     height: 75px;
     border-radius: 4px;
@@ -356,13 +401,13 @@ button, input, optgroup, select, textarea {
     border-top: solid 1px var(--cor-6);
 }
 
-.tab-bar .tab-bar-item, .tab-bar .tab-bar-item__badge{
+.tab-bar .tab-bar-item, .tab-bar .tab-bar-item__badge {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tab-bar .tab-bar-item{
+.tab-bar .tab-bar-item {
     position: relative;
     overflow: hidden;
     padding: 10px 0;
@@ -374,21 +419,21 @@ button, input, optgroup, select, textarea {
     background: none;
 }
 
-.tab-bar .tab-bar-item__icon{
+.tab-bar .tab-bar-item__icon {
     position: relative;
 }
 
-.tab-bar .tab-bar-item__icon .icon-marmita{
+.tab-bar .tab-bar-item__icon .icon-marmita {
     width: 21px;
     font-size: 1.2rem;
 }
 
-.icon-marmita{
+.icon-marmita {
     display: inline-block;
     position: relative;
 }
 
-.tab-bar .tab-bar-item__title{
+.tab-bar .tab-bar-item__title {
     color: var(--cor-4);
     font-weight: 300;
     font-size: 1rem;
@@ -397,35 +442,49 @@ button, input, optgroup, select, textarea {
 
 /* footer */
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 0;
-    background-color: var(--cor-6);
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+
+    body {
+        display: contents;
+    }
+
+    /* Remove a moldura do smartphone */
+    .smartphone {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    /* Remove o alto-falante */
+    .smartphone::before {
+        display: none;
+    }
+
+    .screen {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+
+
+    .merchant-banner__wrapper {
+        padding: 80px 0px;
+        width: 100%;
+    }
+
+
 }
-
-.footer h4{
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--cor-4);
-}
-
-.footer nav{
-    margin: 10px 0 40px;
-}
-
-.footer nav ul{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.footer nav ul li a{
-    color: var(--cor-5);
-    font-size: 2rem;
-    margin: 50px;
-}
-
-
-

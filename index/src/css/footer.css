@@ -1,0 +1,38 @@
+/* Footer Section */
+.footer {
+    width: 100%;
+    height: 100%;
+    color: var(--cor-2);
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.footer .footer-social-follow .footer-social-icon a {
+    color: var(--cor-2);
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.footer .footer-social-follow .footer-social-icon a:hover {
+    color: var(--cor-3);
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+} 
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a {
+    text-transform: capitalize;
+    text-decoration: none;
+    opacity: .4;
+    font-weight: 200;
+}

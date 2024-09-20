@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #D9D9D9;
 }
 
 body {
@@ -16,15 +17,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-image: url(../../../images/Black\ and\ White\ Food\ &\ Beverage\ \(Banner\ \(Landscape\)\)\ \(4\).jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
 }
 
 .smartphone {
-    width: 360px;
-    height: 640px;
+    width: 500px;
+    height: 80vh;
     background-color: #000;
     border-radius: 36px;
     padding: 20px;
+    margin-top: 20px;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -204,18 +209,16 @@ h1, p {
 .marmita-scrollbox {
     position: relative;
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     height: 145px;
     background-color: var(--cor-1);
-
 }
 
 .marmita-scrollbox__wrapper {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding-bottom: 17px;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
@@ -225,7 +228,6 @@ h1, p {
     height: 100%;
     position: relative;
     display: inline-flex;
-    overflow-x: scroll;
     background-color: #fff;
 }
 
@@ -368,12 +370,22 @@ button, input, optgroup, select, textarea {
 }
 
 
-.dish-card__price {
+.dish-card__price ul{
+    display: inline-flex;
+    gap: 10px;
     font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 400;
-    color: var(--cor-4);
+    color: var(--cor-1);
 }
+
+.dish-card__price ul li{
+    background-color: var(--cor-3);
+    border-radius: 2px;
+    border: solid 5px var(--cor-3);
+}
+
+
 
 .dish-card .dish-card__container-image {
     position: relative;
@@ -484,6 +496,10 @@ button, input, optgroup, select, textarea {
     .merchant-banner__wrapper {
         padding: 80px 0px;
         width: 100%;
+    }
+
+    .marmita-scrollbox__wrapper {
+        box-sizing: content-box;
     }
 
 
